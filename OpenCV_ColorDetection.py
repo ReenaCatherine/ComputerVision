@@ -13,7 +13,7 @@ while True:
 
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     lower_blue = np.array([90,50,50]) #lightblue
-    upper_blue = np.array([130,255,255]) #darkblue
+    upper_blue = np.array([130,255,250]) #darkblue
 
     mask = cv2.inRange(hsv, lower_blue, upper_blue) #returns only blue pixels - 0s and 1s
     
